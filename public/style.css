@@ -1,0 +1,118 @@
+body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Montserrat", sans-serif;
+}
+.none {
+  display: none !important;
+}
+.landing_page {
+  display: flex;
+  width: 100%;
+  height: 100vh;
+  flex-direction: column;
+  /* justify-content: center; */
+  /* align-items: center; */
+}
+.pokemon_header {
+  margin-top: 5rem;
+  margin-bottom: 5rem;
+  text-align: center;
+  font-size: 2.2rem;
+}
+.pokemons_div {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.pokemon_div {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.pokemon_img {
+  width: 80%;
+  height: auto;
+  margin-bottom: 1rem;
+}
+.vote_button {
+  padding: 0.4rem 1.2rem;
+  border: 0.15rem solid #131313;
+  margin: 0 0.4rem 0.4rem 0;
+  border-radius: 0.36rem;
+  box-sizing: border-box;
+  text-decoration: none;
+  color: white;
+  background-color: #131313;
+  font-size: 1.3rem;
+  transition: 0.3s ease-in-out;
+}
+
+.vote_button:hover {
+  color: black;
+  background-color: white;
+}
+.result_page {
+  width: 100%;
+  height: 100vh;
+}
+.results_div {
+  width: 100%;
+  height: 92.5%;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+
+.result_div {
+  width: 100%;
+  height: 95%;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  align-items: center;
+}
+.data_div {
+  width: 20%;
+  margin-bottom: 1rem;
+  border-radius: 0.2rem;
+}
+#snorlax_data_div {
+  height: 1%;
+  background-color: #7eb0d5;
+}
+#slowpoke_data_div {
+  height: 1%;
+  background-color: #fd7f6f;
+}
+#psyduck_data_div {
+  height: 1%;
+  background-color: #ffee65;
+}
+.result_img {
+  width: 40%;
+  height: auto;
+}
+.data_text_div {
+  height: 7.5%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.data_text {
+  font-size: 1.5rem;
+}
+.name_text {
+  margin-bottom: 0;
+}
+.pokemon_percentage {
+  margin-bottom: 0;
+}

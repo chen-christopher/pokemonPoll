@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link
+    href="https://fonts.googleapis.com/css2?family=Karla:wght@200;400;500&family=Montserrat:wght@300&display=swap"
+    rel="stylesheet"
+    />
+    <link href="style.css" rel="stylesheet">
+    </link>
+    <title>Pokemon Popularity Contest</title>
+</head>
+
+<body>
+    <section class="landing_page">
+        <h1 class="pokemon_header">Pokemon Popularity Contest!</h1>
+        <div class="pokemons_div">
+            <div class="pokemon_div">
+                <img class="pokemon_img" src="./images/slowpoke.png"/>
+                <h2>Slowpoke</h2>
+                <button data-pokemon="slowpoke" class="vote_button">Vote!</button>
+            </div>
+            <div class="pokemon_div">
+                <img class="pokemon_img" src="./images/snorlax.png"/>
+                <h2>Snorlax</h2>
+                <button data-pokemon="snorlax" class="vote_button">Vote!</button>
+            </div>
+            <div class="pokemon_div">
+                <img class="pokemon_img" src="./images/psyduck.png"/>
+                <h2>Psyduck</h2>
+                <button data-pokemon="psyduck" class="vote_button">Vote!</button>
+            </div>       
+        
+        
+            
+        </div>
+    </section>
+    <section class="none result_page">
+        <section class="results_div">
+            <div class="result_div">
+                <div id="slowpoke_data_div" class="data_div"></div>
+                <img class="result_img" src="./images/slowpoke.png"/>
+                <h2 class="name_text">Slowpoke</h2>
+                <h3 id="slowpoke_percentage" class="pokemon_percentage">0%</h3>
+            </div>
+            <div class="result_div">
+                <div id="snorlax_data_div" class="data_div"></div>
+                <img class="result_img" src="./images/snorlax.png"/>
+                <h2 class="name_text">Snorlax</h2>
+                <h3 id="snorlax_percentage" class="pokemon_percentage">0%</h3>
+            </div>
+            <div class="result_div">
+                <div id="psyduck_data_div" class="data_div"></div>
+                <img class="result_img" src="./images/psyduck.png"/>
+                <h2 class="name_text">Psyduck</h2>
+                <h3 id="psyduck_percentage" class="pokemon_percentage">0%</h3>
+            </div>
+            
+        </section>
+        <div class="data_text_div">
+            <h3 class="data_text">Total votes: 0</h3>
+        </div>
+    </section>
+    
+
+
+    
+    <script type="text/javascript" src="/socket.io/socket.io.js"></script>
+    <script src="app.js"></script>
+    <script>(function () {app.initialize();})();</script>
+</body>
+</html>
